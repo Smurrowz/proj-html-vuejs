@@ -1,6 +1,6 @@
 <template>
   <footer>
-    cioa
+    
   </footer>
 </template>
 <script>
@@ -10,6 +10,6 @@ export default {
 </script>
 <style scoped lang="scss">
 footer{
-  padding-top: 200px;
+  padding-top: 2000px;
 }
 </style>

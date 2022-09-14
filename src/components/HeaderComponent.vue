@@ -32,6 +32,20 @@
         </div>
         <button class="mybutton-regular empty-orange"> Free Quote</button>
       </div>
+      <div class="sticky-widgets">
+        <div class="widget">
+          <div class="widg-icon">
+            <font-awesome-icon icon="fa-solid fa-folder" />
+          </div>
+          Demos
+        </div>
+        
+        <div class="widget">
+          <span>39</span>
+          On Sale
+
+        </div>
+      </div>
     </nav>
   </header>
 </template>
@@ -106,6 +120,38 @@ header{
    
   }
 
+}
+.sticky-widgets{
+  position: fixed;
+  top: 200px;
+  right: 50px;
+  z-index: 1001;
+  & .widget{
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: center;
+    & .widg-icon{
+      font-size: 30px;
+      color: rgb(34, 32, 55);
+    }
+    & span{
+      color: rgb(27, 182, 27);
+      font-size: 36px;
+      
+    }
+    & span::before{
+      content: '$';
+      display: block;
+      font-size: 12px;
+      position: absolute;
+
+    }
+  }
 }
 
 </style>
