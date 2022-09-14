@@ -28,16 +28,32 @@ img{
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
+  transition: 200ms ease-in;
   
 }
 
 .mybutton-regular.empty-orange{
   color: #f76210;
   background-color: #f862121a;
-  transition: 200ms ease-in;
 }
 .mybutton-regular.empty-orange:hover{
   color: white;
   background-color: #f76210;
   
+}
+.mybutton-regular.empty{
+  border: 2px solid black;
+  color: black;
+}
+.mybutton-regular.empty:hover{
+ background-color: transparent;
+ color: white;
+ border: 2px solid white;
+}
+.mybutton-regular.orange{
+  background-color: #f76210;
+  color: white;
+}
+.mybutton-regular.orange:hover{
+  background-color: #ce520f;
 }
