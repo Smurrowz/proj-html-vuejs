@@ -1,0 +1,42 @@
+.container{
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, ol, menu{
+  list-style: none;
+}
+
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.mybutton-regular{
+  padding: 20px 45px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  
+}
+
+.mybutton-regular.empty-orange{
+  color: #f76210;
+  background-color: #f862121a;
+  transition: 200ms ease-in;
+}
+.mybutton-regular.empty-orange:hover{
+  color: white;
+  background-color: #f76210;
+  
+}
