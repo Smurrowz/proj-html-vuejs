@@ -123,6 +123,30 @@
       </div>
 
     </section>
+    <section class="container orgs">
+      <h2>Trusted by Leading Organisations</h2>
+      <div class="wrapper">
+        <div class="col33">
+          <img src="../assets/img/case-studies-1-1200x1349.jpg" alt="immagine studies 1">
+          <p>How Spaces attracted five million visitors by improving the content</p>
+          <h3>200%</h3>
+          <span>Higher revenue from digital</span>
+        </div>
+        <div class="col33">
+          <img src="../assets/img/case-studies-4-1200x1349.jpg" alt="immagine studies 2">
+          <p>Creativity helped Hemisferio to increase their brand reach vertically</p>
+          <h3>10x</h3>
+          <span>Sales increase with the same ad spend</span>
+        </div>
+        <div class="col33">
+          <img src="../assets/img/case-studies-6-1200x1349.jpg" alt="immagine studies 3">
+          <p>How DigitalBox used AI-powered data insight to boost sales</p>
+          <h3>3-year</h3>
+          <span>Partnership with Avada Consultant</span>
+        </div>
+      </div>
+      <button class="mybutton-regular orange">Read More Case Studies</button>
+    </section>
 
 
   </div>
@@ -256,6 +280,39 @@ section {
         }
       }
     }
+  }
+}
+.orgs{
+  text-align: center;
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    & .col33{
+      flex-basis: 0;
+      flex-grow: 1;
+      margin: 80px 20px 80px 20px;
+      
+    }
+  }
+
+  & h2 {
+    font-size: 54px;
+    
+  }
+
+  & p {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  & h3{
+    font-size: 54px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  & span{
+    font-size: 20px;
+    color: grey;
   }
 }
 </style>
