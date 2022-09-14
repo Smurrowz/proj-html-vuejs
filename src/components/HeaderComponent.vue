@@ -135,6 +135,7 @@ header{
     font-size: 12px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 2px 2px 20px  black;
     & .widg-icon{
       font-size: 30px;
       color: rgb(34, 32, 55);
