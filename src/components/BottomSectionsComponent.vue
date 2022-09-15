@@ -62,9 +62,31 @@
         </div>
       </div>
     </section>
-    <section class="container">
-
-    </section>
+    <div class="container awards">
+      <h3>Awards</h3>
+      <ul class="awards-list">
+        <li>
+          <img id="logo1" src="../assets/img/award-a.png" alt="logo award 1">
+          <span>Winner Seo Master MAGT</span><br>
+          <span>Smart Start Award 2017</span>
+        </li>
+        <li>
+          <img id="logo2" src="../assets/img/award-b.png" alt="logo award 1">
+          <span>Winner Seo Master MAGT</span><br>
+          <span>Smart Start Award 2017</span>
+        </li>
+        <li>
+          <img id="logo3" src="../assets/img/award-c.png" alt="logo award 1">
+          <span>Winner Seo Master MAGT</span><br>
+          <span>Smart Start Award 2017</span>
+        </li>
+        <li>
+          <img  id="logo4" src="../assets/img/award-d.png" alt="logo award 1">
+          <span>Winner Seo Master MAGT</span><br>
+          <span>Smart Start Award 2017</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -76,7 +98,8 @@ export default {
 @import '../assets/style/index.scss';
 
 .bg-light {
-  background-color: #F8F8F9;
+  background: rgb(244,244,246);
+  background: linear-gradient(0deg, rgba(250,250,251,1) 0%, rgba(244,244,246,1) 100%);
   padding-top: 130px;
 }
 
@@ -110,13 +133,18 @@ export default {
 
   & .col-right {
     width: 50%;
+    & img {
+      border-radius: 12px;
+    }
     & ul{
       padding: 70px 100px;
+    }
+    & li:not(li:last-child){
+      margin-bottom: 100px;
     }
     & li {
       display: flex;
       gap: 30px;
-      margin-bottom: 100px;
       align-items: center;
       & .li-text{
         display: flex;
@@ -139,10 +167,44 @@ export default {
         font-size: 30px;
       }
 
-      & img {
-        border-radius: 20px;
+    }
+  }
+}
+.awards{
+  text-align: center;
+  padding-bottom: 120px;
+  & h3{
+    font-size: 30px;
+    margin-bottom: 70px;
+    
+  }
+  & ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    & li{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & span{
+        font-size: 20px;
+      }
+      & img{
+        height: 100px;
+       
+        
       }
     }
   }
+}
+#logo3{
+  filter: saturate(5.5);
+    opacity: 0.7
+}
+#logo1{
+  filter: invert(1);
+}
+#logo4{
+  filter: hue-rotate(212deg); 
 }
 </style>

@@ -77,9 +77,11 @@ header{
     & li{
       position: relative;
       padding: 6px;
+      
     }
     & li:hover{
       color: #f76210;
+      
     }
     & li:hover::after{
       content: '';

@@ -206,9 +206,11 @@ section {
         & .rounded {
 
           color: white;
-          line-height: 40px;
+          height: 40px;
           width: 40px;
-          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border-radius: 50%;
         }
 
