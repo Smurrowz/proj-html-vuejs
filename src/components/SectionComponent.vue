@@ -314,6 +314,9 @@ section {
 
       & .img-content {
         position: relative;
+        & img{
+          display: block;
+        }
         &:hover{
           .overlay{
             opacity: 0.7;
