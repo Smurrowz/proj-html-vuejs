@@ -127,19 +127,28 @@
       <h2>Trusted by Leading Organisations</h2>
       <div class="wrapper">
         <div class="col33">
-          <img src="../assets/img/case-studies-1-1200x1349.jpg" alt="immagine studies 1">
+          <div class="img-content">
+            <img src="../assets/img/case-studies-1-1200x1349.jpg" alt="immagine studies 1">
+            <div class="overlay"></div>
+          </div>
           <p>How Spaces attracted five million visitors by improving the content</p>
           <h3>200%</h3>
           <span>Higher revenue from digital</span>
         </div>
         <div class="col33">
-          <img src="../assets/img/case-studies-4-1200x1349.jpg" alt="immagine studies 2">
+          <div class="img-content">
+            <img src="../assets/img/case-studies-4-1200x1349.jpg" alt="immagine studies 2">
+            <div class="overlay"></div>
+          </div>
           <p>Creativity helped Hemisferio to increase their brand reach vertically</p>
           <h3>10x</h3>
           <span>Sales increase with the same ad spend</span>
         </div>
         <div class="col33">
-          <img src="../assets/img/case-studies-6-1200x1349.jpg" alt="immagine studies 3">
+          <div class="img-content">
+            <img src="../assets/img/case-studies-6-1200x1349.jpg" alt="immagine studies 3">
+            <div class="overlay"></div>
+          </div>
           <p>How DigitalBox used AI-powered data insight to boost sales</p>
           <h3>3-year</h3>
           <span>Partnership with Avada Consultant</span>
@@ -147,6 +156,7 @@
       </div>
       <button class="mybutton-regular orange">Read More Case Studies</button>
     </section>
+
 
 
   </div>
@@ -254,50 +264,79 @@ section {
 
   & .navb {
     display: flex;
-    padding:16px 50px ;
+    padding: 16px 50px;
     justify-content: space-between;
     align-items: center;
     border-radius: 12px;
     box-shadow: 0px 10px 30px 5px rgb(168, 165, 165);
-    & a{
+
+    & a {
       font-size: 26px;
       font-weight: 500;
     }
-    & .employee{
+
+    & .employee {
       display: flex;
-      gap:25px ;
+      gap: 25px;
       align-items: center;
-      & img{
+
+      & img {
         border-radius: 50%;
         max-width: 60px;
       }
-      & .employee-info{
-        & p{
+
+      & .employee-info {
+        & p {
           font-size: 14px;
         }
-        & h4{
+
+        & h4 {
           font-size: 20px;
         }
       }
     }
   }
 }
-.orgs{
+
+.orgs {
   text-align: center;
-  .wrapper{
+
+  .wrapper {
     display: flex;
     flex-wrap: wrap;
-    & .col33{
+
+    & .col33 {
       flex-basis: 0;
       flex-grow: 1;
       margin: 80px 20px 80px 20px;
-      
+
+      & .img-content {
+        position: relative;
+        &:hover{
+          .overlay{
+            opacity: 0.7;
+          }
+        }
+        & .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+          background: linear-gradient(180deg, rgb(255, 255, 255, 0) 0%, rgba(247,98,16,1) 100%);
+          opacity: 0;
+          transition: all .3s ease;
+          
+        }
+      }
+
     }
   }
 
   & h2 {
     font-size: 54px;
-    
+
   }
 
   & p {
@@ -305,12 +344,14 @@ section {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  & h3{
+
+  & h3 {
     font-size: 54px;
     margin-top: 30px;
     margin-bottom: 20px;
   }
-  & span{
+
+  & span {
     font-size: 20px;
     color: grey;
   }
