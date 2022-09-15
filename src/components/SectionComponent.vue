@@ -336,10 +336,6 @@ section {
     }
   }
 
-  & h2 {
-    font-size: 54px;
-
-  }
 
   & p {
     font-size: 32px;
